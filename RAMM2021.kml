@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
   <Document>
     <name>RAAM 2021</name>
     <description><![CDATA[Base map created from files on the RAAM Resources page. Click the Show/Hide icons to turn on/off the layers.]]></description>
