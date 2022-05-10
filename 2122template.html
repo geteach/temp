@@ -24,60 +24,60 @@
                     document.getElementById('playButton').innerHTML = 'Play';
                     audio.pause();
                 };
-				audio.ontimeupdate = function() {clickCam()};
-				function clickCam() {
-					if (audio.currentTime >= 1 && audio.currentTime <= 1.5){
-						document.getElementById('stop1').click();
-						document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
-						document.getElementById('caption').innerText = "Caption 1";
-						document.getElementById('title').innerText = "Stop 1";
-						document.getElementById('learningObjective').innerText = "Learning Objective 1";
-						document.getElementById('exampleText').innerText = "Example Text 1";
-					}
-					if (audio.currentTime >= 3 && audio.currentTime <= 3.5){
-						document.getElementById('stop2').click();
-						document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
-						document.getElementById('caption').innerText = "Caption 2";
-						document.getElementById('title').innerText = "Title 2";
-						document.getElementById('learningObjective').innerText = "Learning Objective 2";
-						document.getElementById('exampleText').innerText = "Example Text 2";
-					}
-					if (audio.currentTime >= 4 && audio.currentTime <= 4.5){
-						document.getElementById('stop3').click();
-						document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
-						document.getElementById('caption').innerText = "Caption 3";
-						document.getElementById('title').innerText = "Title 3";
-						document.getElementById('learningObjective').innerText = "Learning Objective 3";
-						document.getElementById('exampleText').innerText = "Example Text 3";
-					}
-					if (audio.currentTime >= 7 && audio.currentTime <= 7.5){
-						document.getElementById('stop4').click();
-						document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
-						document.getElementById('caption').innerText = "Caption 4";
-						document.getElementById('title').innerText = "Title 4";
-						document.getElementById('learningObjective').innerText = "Learning Objective 4";
-						document.getElementById('exampleText').innerText = "Example Text 4";
-					}
-					if (audio.currentTime >= 11 && audio.currentTime <= 11.5){
-						document.getElementById('stop5').click();
-						document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
-						document.getElementById('caption').innerText = "Caption 5";
-						document.getElementById('title').innerText = "Title 5";
-						document.getElementById('learningObjective').innerText = "Learning Objective 5";
-						document.getElementById('exampleText').innerText = "Example Text 5";
-					}
-					if (audio.currentTime >= 15 && audio.currentTime <= 15.5){
-						document.getElementById('stop6').click();
-						document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
-						document.getElementById('caption').innerText = "Caption 6";
-						document.getElementById('title').innerText = "Title 6";
-						document.getElementById('learningObjective').innerText = "Learning Objective 6";
-						document.getElementById('exampleText').innerText = "Example Text 6";
-					}
-				}
+		audio.ontimeupdate = function() {clickCam()};
+		function clickCam() {
+			if (audio.currentTime >= 1 && audio.currentTime <= 1.5){
+				document.getElementById('stop1').click();
+				document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
+				document.getElementById('caption').innerText = "Caption 1";
+				document.getElementById('title').innerText = "Stop 1";
+				document.getElementById('learningObjective').innerText = "Learning Objective 1";
+				document.getElementById('exampleText').innerText = "Example Text 1";
+			}
+			if (audio.currentTime >= 3 && audio.currentTime <= 3.5){
+				document.getElementById('stop2').click();
+				document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
+				document.getElementById('caption').innerText = "Caption 2";
+				document.getElementById('title').innerText = "Title 2";
+				document.getElementById('learningObjective').innerText = "Learning Objective 2";
+				document.getElementById('exampleText').innerText = "Example Text 2";
+			}
+			if (audio.currentTime >= 4 && audio.currentTime <= 4.5){
+				document.getElementById('stop3').click();
+				document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
+				document.getElementById('caption').innerText = "Caption 3";
+				document.getElementById('title').innerText = "Title 3";
+				document.getElementById('learningObjective').innerText = "Learning Objective 3";
+				document.getElementById('exampleText').innerText = "Example Text 3";
+			}
+			if (audio.currentTime >= 7 && audio.currentTime <= 7.5){
+				document.getElementById('stop4').click();
+				document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
+				document.getElementById('caption').innerText = "Caption 4";
+				document.getElementById('title').innerText = "Title 4";
+				document.getElementById('learningObjective').innerText = "Learning Objective 4";
+				document.getElementById('exampleText').innerText = "Example Text 4";
+			}
+			if (audio.currentTime >= 11 && audio.currentTime <= 11.5){
+				document.getElementById('stop5').click();
+				document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
+				document.getElementById('caption').innerText = "Caption 5";
+				document.getElementById('title').innerText = "Title 5";
+				document.getElementById('learningObjective').innerText = "Learning Objective 5";
+				document.getElementById('exampleText').innerText = "Example Text 5";
+			}
+			if (audio.currentTime >= 15 && audio.currentTime <= 15.5){
+				document.getElementById('stop6').click();
+				document.getElementById('image').src="https://cdn.vox-cdn.com/thumbor/q7JkB9ODW_n4u7T0a2y6K7fdP8w=/902x597/cdn.vox-cdn.com/uploads/chorus_asset/file/1253446/5664938573_6d3061ca1a_o.0.jpg"; 
+				document.getElementById('caption').innerText = "Caption 6";
+				document.getElementById('title').innerText = "Title 6";
+				document.getElementById('learningObjective').innerText = "Learning Objective 6";
+				document.getElementById('exampleText').innerText = "Example Text 6";
+			}
+		}
             };
         </script>
-	</head>
+    </head>
     <body>
         <div id="container">
             <main class="panelMain">
@@ -121,13 +121,12 @@
                         </a>
                     </div>
                     <div class="logoRight" style="display:none">
-							<a href="#place1;Flyto" id="stop1"></a>
-							<a href="#place2;Flyto" id="stop2"></a>
-							<a href="#place3;Flyto" id="stop3"></a>
-							<a href="#place4;Flyto" id="stop4"></a>
-							<a href="#place5;Flyto" id="stop5"></a>
-							<a href="#place6;Flyto" id="stop6"></a>
-
+			<a href="#place1;Flyto" id="stop1"></a>
+			<a href="#place2;Flyto" id="stop2"></a>
+			<a href="#place3;Flyto" id="stop3"></a>
+			<a href="#place4;Flyto" id="stop4"></a>
+			<a href="#place5;Flyto" id="stop5"></a>
+			<a href="#place6;Flyto" id="stop6"></a>
                     </div>
                 </div>
             </main>
