@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Animated Path</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<title>Animated Path</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>	
 	<body>
 		<div id='buttonContain'>
@@ -11,7 +11,7 @@
 		</div>
 		<div id='pathLinks' style='display:none'>
 			<a href='#005ED50E2324438A9878;show' class='setFolders' id='resourcesShow' name='resourcesShow'></a>
-		
+
 			<a href='#05A6D6A8BB24438B6DB0;show' class='showlink' id='1show' name='1show'></a>
 			<a href='#0ACF10593424438BFAC9;show' class='showlink' id='2show' name='2show'></a>
 			<a href='#0F580C2BD924438D8F5D;show' class='showlink' id='3show' name='3show'></a>
@@ -39,24 +39,24 @@
 			<a href='#08014D8CD7244395B086;hide' class='hidelink' id='12hide' name='12hide'></a>
 		</div>
 		<script>
-		    var folderElems = document.getElementsByClassName("setFolders");
-            var hideElems = document.getElementsByClassName("hidelink");
+			var folderElems = document.getElementsByClassName("setFolders");
+			var hideElems = document.getElementsByClassName("hidelink");
 			var showlink = document.getElementsByClassName('showlink');
 
-//Sets the scene by making sure the path folder is visible and the 12 paths are hidden		
-            window.onload = function setScene() {
-                for(var i=0; i<folderElems.length;i++) { folderElems[i].click(); }
-                for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
-            };
+			//Sets the scene by making sure the path folder is visible and the 12 paths are hidden		
+			window.onload = function setScene() {
+				for(var i=0; i<folderElems.length;i++) { folderElems[i].click(); }
+				for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
+			};
 
-//button event listerner to fire function when button is clicked			
+			//button event listerner to fire function when button is clicked			
 			const element = document.getElementById('animate');
 			element.addEventListener('click', animatePath);
 
-//Function to loop through paths and clicking them to visible 50 milliseconds apart		
+			//Function to loop through paths and clicking them to visible 50 milliseconds apart		
 			function animatePath() {
 
-//first hides all paths before setting them to visible so you can keep clicking the button to fire animation			
+				//first hides all paths before setting them to visible so you can keep clicking the button to fire animation			
 				for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
 				for(var i= 0; i < showlink.length;i++) {
 					(function(i){
@@ -66,6 +66,6 @@
 					})(i);
 				}
 			};
-        </script>
+		</script>
 	</body>
 </html>
