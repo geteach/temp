@@ -39,25 +39,33 @@
 			<a href='#08014D8CD7244395B086;hide' class='hidelink' id='12hide' name='12hide'></a>
 		</div>
 		<script>
+		    var folderElems = document.getElementsByClassName("setFolders");
+            var hideElems = document.getElementsByClassName("hidelink");
+			var showlink = document.getElementsByClassName('showlink');
+
+//Sets the scene by making sure the path folder is visible and the 12 paths are hidden		
             window.onload = function setScene() {
-                var folderElems = document.getElementsByClassName("setFolders");
-                var hideElems = document.getElementsByClassName("hidelink");
                 for(var i=0; i<folderElems.length;i++) { folderElems[i].click(); }
                 for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
             };
+
+//button event listerner to fire function when button is clicked			
 			const element = document.getElementById('animate');
 			element.addEventListener('click', animatePath);
+
+//Function to loop through paths and clicking them to visible 50 milliseconds apart		
 			function animatePath() {
-				var showlink = document.getElementsByClassName('showlink');
+
+//first hides all paths before setting them to visible so you can keep clicking the button to fire animation			
 				for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
 				for(var i= 0; i < showlink.length;i++) {
 					(function(i){
 						setTimeout(function(){
 						showlink[i].click();
-						}, 1 + (50 * i));
+						}, 50 + (50 * i));
 					})(i);
 				}
 			};
         </script>
 	</body>
-</html>	
+</html>
