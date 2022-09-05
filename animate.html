@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Animated Path</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>	
+	<body>
+		<div id='buttonContain'>
+			<button id='animate'type="button">Animate Path!</button>
+		</div>
+		<div id='pathLinks' style='display:none'>
+			<a href='#005ED50E2324438A9878;show' class='setFolders' id='resourcesShow' name='resourcesShow'></a>
+		
+			<a href='#05A6D6A8BB24438B6DB0;show' class='showlink' id='1show' name='1show'></a>
+			<a href='#0ACF10593424438BFAC9;show' class='showlink' id='2show' name='2show'></a>
+			<a href='#0F580C2BD924438D8F5D;show' class='showlink' id='3show' name='3show'></a>
+			<a href='#07060A58FD24438E5E8D;show' class='showlink' id='4show' name='4show'></a>
+			<a href='#08D146EF6124438F9FC4;show' class='showlink' id='5show' name='5show'></a>
+			<a href='#07331589DF24439096B4;show' class='showlink' id='6show' name='6show'></a>
+			<a href='#00FCA742E42443911BFB;show' class='showlink' id='7show' name='7show'></a>
+			<a href='#0A8ECB198B2443925A12;show' class='showlink' id='8show' name='8show'></a>
+			<a href='#0DB58146302443933310;show' class='showlink' id='9show' name='9show'></a>
+			<a href='#053B119CED244393DA35;show' class='showlink' id='10show' name='10show'></a>
+			<a href='#00129CCC48244394E95E;show' class='showlink' id='11show' name='11show'></a>
+			<a href='#08014D8CD7244395B086;show' class='showlink' id='12show' name='12show'></a>
+
+			<a href='#05A6D6A8BB24438B6DB0;hide' class='hidelink' id='1hide' name='1hide'></a>
+			<a href='#0ACF10593424438BFAC9;hide' class='hidelink' id='2hide' name='2hide'></a>
+			<a href='#0F580C2BD924438D8F5D;hide' class='hidelink' id='3hide' name='3hide'></a>
+			<a href='#07060A58FD24438E5E8D;hide' class='hidelink' id='4hide' name='4hide'></a>
+			<a href='#08D146EF6124438F9FC4;hide' class='hidelink' id='5hide' name='5hide'></a>
+			<a href='#07331589DF24439096B4;hide' class='hidelink' id='6hide' name='6hide'></a>
+			<a href='#00FCA742E42443911BFB;hide' class='hidelink' id='7hide' name='7hide'></a>
+			<a href='#0A8ECB198B2443925A12;hide' class='hidelink' id='8hide' name='8hide'></a>
+			<a href='#0DB58146302443933310;hide' class='hidelink' id='9hide' name='9hide'></a>
+			<a href='#053B119CED244393DA35;hide' class='hidelink' id='10hide' name='10hide'></a>
+			<a href='#00129CCC48244394E95E;hide' class='hidelink' id='11hide' name='11hide'></a>
+			<a href='#08014D8CD7244395B086;hide' class='hidelink' id='12hide' name='12hide'></a>
+		</div>
+		<script>
+            window.onload = function setScene() {
+                var folderElems = document.getElementsByClassName("setFolders");
+                var hideElems = document.getElementsByClassName("hidelink");
+                for(var i=0; i<folderElems.length;i++) { folderElems[i].click(); }
+                for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
+            };
+			const element = document.getElementById('animate');
+			element.addEventListener('click', animatePath);
+			function animatePath() {
+				var showlink = document.getElementsByClassName('showlink');
+				for(var i=0; i<hideElems.length;i++) { hideElems[i].click(); }
+				for(var i= 0; i < showlink.length;i++) {
+					(function(i){
+						setTimeout(function(){
+						showlink[i].click();
+						}, 1 + (50 * i));
+					})(i);
+				}
+			};
+        </script>
+	</body>
+</html>	
